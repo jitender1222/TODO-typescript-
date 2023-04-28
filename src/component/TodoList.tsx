@@ -17,7 +17,7 @@ const TodoList= ({todos,setTodos,completeTodos,setCompleteTodos}:props) => {
     <Droppable droppableId='TodosList'>
       {
         (provided,snapshot)=>(
-          <div className={`todos ${snapshot.isDraggingOver?"dragactive":""}`} ref={provided.innerRef} {...provided.droppableProps}>
+          <div className={`todos todos--full ${snapshot.isDraggingOver?"dragactive":""}`} ref={provided.innerRef} {...provided.droppableProps}>
       <span className='todos__heading'>
         Active Tasks
       </span>
